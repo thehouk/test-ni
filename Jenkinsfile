@@ -5,12 +5,6 @@ pipeline {
             }
           }
     stages {
-        stage('Checkout'){
-            steps {
-                /* checkout scm */
-                git branch: '${BRANCH_NAME}', credentialsId: 'a26c7a5c-3771-46e0-8676-6ac7ea1ebed8', url: 'https://github.com/thehouk/test-ni.git'
-                }
-              }
         stage('Build'){
             steps {
                 /* build image on remote machine */
