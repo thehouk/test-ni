@@ -8,7 +8,7 @@ pipeline {
         stage('Checkout'){
             steps {
                 /* checkout scm */
-                git branch: '${BRANCH_NAME}', credentialsId: '7b8f5335-2f83-4e06-a80d-6b739328acfd', url: 'https://github.com/thehouk/test-ni.git'
+                git branch: '${BRANCH_NAME}', credentialsId: 'a26c7a5c-3771-46e0-8676-6ac7ea1ebed8', url: 'https://github.com/thehouk/test-ni.git'
                 }
               }
         stage('Build'){
